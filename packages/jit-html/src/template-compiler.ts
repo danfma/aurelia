@@ -124,8 +124,8 @@ export class TemplateCompiler implements ITemplateCompiler {
 
     const customAttributes = surrogate.customAttributes;
     const plainAttributes = surrogate.plainAttributes;
-    const customAttributeLength = customAttributes.length;
-    const plainAttributeLength = plainAttributes.length;
+    const customAttributeLength: number = customAttributes.length;
+    const plainAttributeLength: number = plainAttributes.length;
     if (customAttributeLength + plainAttributeLength > 0) {
       let offset = 0;
       for (let i = 0; customAttributeLength > i; ++i) {
@@ -305,8 +305,8 @@ export class TemplateCompiler implements ITemplateCompiler {
       // any attributes on a custom element (which are not bindables) or a plain element
       const customAttributes = symbol.customAttributes;
       const plainAttributes = symbol.plainAttributes;
-      const customAttributeLength = customAttributes.length;
-      const plainAttributesLength = plainAttributes.length;
+      const customAttributeLength: number = customAttributes.length;
+      const plainAttributesLength: number = plainAttributes.length;
       attributeInstructions = Array(offset + customAttributeLength + plainAttributesLength);
       for (let i = 0; customAttributeLength > i; ++i) {
         attributeInstructions[offset] = this.compileCustomAttribute(customAttributes[i]);

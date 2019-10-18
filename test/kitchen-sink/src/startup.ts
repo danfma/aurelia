@@ -140,7 +140,7 @@ const container = DI.createContainer().register(
   // custom inline registrations
   ValueConverter.define('pascal', class {
     public toView(input: string): string {
-      const camel = camelCase(input);
+      const camel: string = camelCase(input);
       return camel.slice(0, 1).toUpperCase() + camel.slice(1);
     }
   }),

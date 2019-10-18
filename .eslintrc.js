@@ -87,6 +87,7 @@ module.exports = {
     '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/require-await': 'error',
+    '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/semi': 'error',
     '@typescript-eslint/triple-slash-reference': ['error', { path: 'never', types: 'always', lib: 'never' }],
     '@typescript-eslint/type-annotation-spacing': 'error',
@@ -190,7 +191,9 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/promise-function-async': 'warn',
     // '@typescript-eslint/quotes': ['warn', 'backtick', { avoidEscape: true }],
+    '@typescript-eslint/require-array-sort-compare': 'warn',
     '@typescript-eslint/strict-boolean-expressions': 'warn',
     '@typescript-eslint/typedef': ['warn', { arrowParameter: false, parameter: false, variableDeclaration: false }],
     '@typescript-eslint/unbound-method': 'warn',
@@ -231,6 +234,7 @@ module.exports = {
       '@typescript-eslint/explicit-member-accessibility': 'off',
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-var-requires': 'off',
+      '@typescript-eslint/restrict-plus-operands': 'off',
       '@typescript-eslint/typedef': 'off',
       'compat/compat': 'off'
     }
