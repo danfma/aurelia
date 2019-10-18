@@ -44,7 +44,7 @@ export class App implements IViewModel {
     this.router.guardian.addGuard(
       (instructions) => {
         if (this.state.isAuthenticated) { return true; }
-        this.router.goto(`auth(type=login)`);
+        this.router.goto(`auth(type=login)`).catch((error: Error) => { throw error; });
         return [];
       }
       , { include: [{ component: 'editor' }, { component: 'settings' }] },

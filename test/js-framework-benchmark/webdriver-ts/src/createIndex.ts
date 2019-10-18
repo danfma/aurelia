@@ -20,4 +20,4 @@ async function main() {
   );
 }
 
-main();
+main().catch((error: Error) => { throw error; });
