@@ -82,7 +82,7 @@ module.exports = {
     '@typescript-eslint/semi': 'error',
     '@typescript-eslint/triple-slash-reference': ['error', { path: 'never', types: 'always', lib: 'never' }],
     '@typescript-eslint/type-annotation-spacing': 'error',
-    'compat/compat': 'warn',
+    'compat/compat': 'off', // Disable for now, because we don't need a warning on every single Promise, and it adds noise that masks more important issues
     'import/default': 'error',
     'import/export': 'error',
     'import/extensions': ['error', 'never', { css: 'always', html: 'always', scss: 'always' }],
@@ -177,14 +177,14 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'warn',
     '@typescript-eslint/no-misused-promises': 'warn',
     '@typescript-eslint/no-this-alias': 'warn',
-    '@typescript-eslint/no-unnecessary-condition': 'warn',
+    '@typescript-eslint/no-unnecessary-condition': 'off', // disabled because only false positives spotted so far, and it adds noise that masks more important issues
     '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
     '@typescript-eslint/no-unused-vars': 'warn',
-    '@typescript-eslint/no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'off', // disabled because only false positives spotted so far, and it adds noise that masks more important issues
     // '@typescript-eslint/quotes': ['warn', 'backtick', { avoidEscape: true }],
     '@typescript-eslint/strict-boolean-expressions': 'warn',
     '@typescript-eslint/typedef': ['warn', { arrowParameter: false, parameter: false, variableDeclaration: false }],
-    '@typescript-eslint/unbound-method': 'warn',
+    '@typescript-eslint/unbound-method': 'off', // disabled because only false positives spotted so far, and it adds noise that masks more important issues
     'jsdoc/check-examples': 'off',
     'jsdoc/check-param-names': 'off',
     'jsdoc/match-description': 'off',
