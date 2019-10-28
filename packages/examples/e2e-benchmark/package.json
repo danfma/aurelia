@@ -6,7 +6,7 @@
   "devDependencies": {
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^10.14.13",
+    "@types/node": "^10.17.0",
     "@types/selenium-webdriver": "^4.0.5",
     "chai": "^4.2.0",
     "chromedriver": "^76.0.1",

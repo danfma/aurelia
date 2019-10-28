@@ -42,10 +42,10 @@
     "@aurelia/runtime-html-jsdom": "0.4.0",
     "@aurelia/jit": "0.4.0",
     "@aurelia/jit-html": "0.4.0",
-    "jsdom": "^15.1.1"
+    "jsdom": "^15.2.0"
   },
   "devDependencies": {
-    "@types/node": "^10.14.13",
+    "@types/node": "^10.17.0",
     "tslib": "^1.10.0",
     "typescript": "^3.6.4"
   }
