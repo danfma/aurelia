@@ -250,6 +250,7 @@ module.exports = {
   settings: {
     polyfills: [
       'fetch',
+      'Promise',
       'Reflect'
     ]
   }
